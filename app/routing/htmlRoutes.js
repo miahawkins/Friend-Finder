@@ -1,6 +1,6 @@
 var path = require("path");
 
-function htmlRoutes() {
+function htmlRoutes(app) {
 	// Basic route that sends the user first to the AJAX Page
 	app.get("/", function(req, res) {
 	  res.sendFile(path.join(__dirname, "../public/home.html"));
@@ -11,4 +11,4 @@ function htmlRoutes() {
 	});
 };
 
-module.exports = htmlRoutes();
+module.exports = htmlRoutes;
